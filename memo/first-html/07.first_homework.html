@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아기소공방</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <style>
+        .wrapper {
+            margin: auto;
+
+            width: 900px;
+        }
+
+        .img {
+            width: 900px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            width: 100px;
+            margin: auto;
+            /* align-items : center; */
+        }
+
+        .item_text {
+            margin-bottom: 10px;
+        }
+
+        .item_name {
+            font-size: 50px;
+            padding: 90 90 90 0;
+            font-family: 'Gaegu', cursive;
+            letter-spacing: -5px;
+            color: #6D281F;
+
+        }
+        .item_des {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #6D281F;
+        }
+        .price {
+            font-size: 20px;
+            padding-left: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+    <script>
+        function hey() {
+            alert('주문이 완료되었습니다');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <img class="img" src="아기소공방.jpg"></img>
+        <div>
+            <div class="item_text">
+                <span class="item_name">아기소공방 미니편지지 세트</span>
+                <span class="price">3000원 / 1개 </span>
+                <div class="item_des">
+                    아기소공방의 편지지&편지봉투 세트입니다.<br>
+                    모두 3종류의 아기소(아기소라, 빰 아기소, 메달린 아기소)가 그려져 있어요.<br>작은 사이즈로 짧은 말이나 시를 쓰기에 적당해요.<br> 소중한 사람에게 자신의 진심을 전해요.
+                </div> <hr/>
+            </div>
+        </div>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자이름</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">수량</span>
+            </div>
+            <!-- <input type="select" class="form-control" aria-describedby="basic-addon1"> -->
+            <select class="custom-select">
+                <option selected>--수량을 선택하세요--</option>
+                <option value="1">1개</option>
+                <option value="2">2개</option>
+                <option value="3">3개</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="button">
+        <button onclick="hey()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
